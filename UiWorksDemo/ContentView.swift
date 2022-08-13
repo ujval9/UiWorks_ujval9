@@ -9,13 +9,54 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Creating A repo")
-            .padding()
+        ZStack{
+            Color("black")
+        .ignoresSafeArea()
+            HStack {
+                Button(
+                    action: {},
+                       label: {
+                           RoundedRectangle(cornerRadius: 15)
+                               .foregroundColor(.white)
+                               .frame(width: 50, height: 50, alignment: .center)
+                               .overlay(
+                                Image("Profilepic").resizable()
+                                    .scaledToFit()
+                                    .frame(width: 40, height: 40)
+                                    .clipped()
+                               )
+                           
+                       }
+                )
+                Button(
+                    action: {},
+                       label: {
+                           RoundedRectangle(cornerRadius: 15)
+                               .fill(Color("Custom"))
+                               .frame(width: 50, height: 50, alignment: .center)
+                               .overlay(
+                                Image(systemName: "bell.badge")
+                                    .renderingMode(.original)
+                                    .font(.largeTitle)
+                                    .foregroundColor(.white)
+                                    
+                               )
+                               
+                           
+                       }
+                )
+            }
+        }
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
+            
+            
+            
     }
 }

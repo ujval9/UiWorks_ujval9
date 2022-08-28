@@ -27,7 +27,7 @@ struct Layout_Previews: PreviewProvider {
     static var previews: some View {
         Layout().previewDevice("iPhone 12 mini").previewInterfaceOrientation(.portrait)
         Layout()
-            .previewInterfaceOrientation(.portraitUpsideDown)
+            .previewInterfaceOrientation(.portrait)
     
 
     }

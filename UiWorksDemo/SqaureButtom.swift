@@ -14,8 +14,6 @@ import SwiftUI
 //}
 
 struct SqaureButton: View {
-    @State var width:CGFloat? = nil
-    @State var height:CGFloat? = nil
     var body: some View {
      
             Button (
@@ -39,11 +37,7 @@ struct SqaureButton: View {
                             .cornerRadius(35)
                        }
                        .padding(5)
-//                        .background(GeometryReader {proxy in
-//                            Color.red
-//                        })
-                           
-                   }
+               }
             )
         
            

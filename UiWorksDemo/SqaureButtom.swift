@@ -14,6 +14,10 @@ import SwiftUI
 //}
 
 struct SqaureButton: View {
+    let iconName : String
+    let cardText : String
+    let bckColor : String
+    let textColor : String
     var body: some View {
      
             Button (
@@ -21,11 +25,11 @@ struct SqaureButton: View {
                    label: {
                        VStack {
                            VStack{
-                                Image(systemName: "bell.badge")
+                                Image(systemName: iconName)
                                     .renderingMode(.original)
                                     .font(.largeTitle)
-                                    .foregroundColor(.white)
-                                    Text("Top up")
+                                    .foregroundColor(Color(textColor))
+                                    Text(cardText)
                                     .font(.title2)
                                     .fontWeight(.semibold)
                                     .foregroundColor(Color.black).padding()
@@ -33,7 +37,7 @@ struct SqaureButton: View {
                                
                             }.frame(height: 150)
                                .frame (maxWidth: .infinity)
-                            .background(Color("CardGreen"))
+                            .background(Color(bckColor))
                             .cornerRadius(35)
                        }
                        .padding(5)
@@ -49,15 +53,8 @@ struct SqaureButton: View {
 
 struct SqaureButton_Previews: PreviewProvider {
     static var previews: some View {
-        SqaureButton()
-        SqaureButton()
-            .previewDevice("iPhone 12 Pro")
-            .previewInterfaceOrientation(.portrait)
-        SqaureButton()
-            .previewDevice("iPhone 13 mini")
-            .previewInterfaceOrientation(.portrait)
-        
-            
+        SqaureButton(iconName: "info",cardText: "To Up" ,bckColor:"CardGreen", textColor: "")
+      
         
     }
 }

@@ -11,8 +11,8 @@ import SwiftUI
 struct UiWorksDemoApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            SqaureButton()
+            ContentView()
+          
         }
     }
 }

@@ -13,7 +13,7 @@ extension Color {
 }
 
 struct ColorTheme {
-    let appleCard = Color("Apple")
+    let appleCard = Color("Appy")
     let appleLogoBag = Color("applegreen")
     let amazonCard = Color("AmazonColor")
     let amazonLogoBag = Color("Amazon")

@@ -13,7 +13,7 @@ struct Rectangle_Button: View {
 //            .renderingMode(.original)
             .font(.largeTitle)
             .foregroundColor(Color.white)
-            .frame(width: 85, height: 85)
+            .frame(width: 60, height: 60)
             .background(
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(Color.theme.bell)

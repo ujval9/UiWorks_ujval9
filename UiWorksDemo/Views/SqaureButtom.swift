@@ -32,10 +32,10 @@ struct SqaureButton: View {
                                     Text(cardText)
                                     .font(.title2)
                                     .fontWeight(.semibold)
-                                    .foregroundColor(Color.black).padding()
+                                    .foregroundColor(Color(textColor)).padding()
                                     
                                
-                            }.frame(height: 150)
+                            }.frame(height: 125)
                                .frame (maxWidth: .infinity)
                             .background(Color(bckColor))
                             .cornerRadius(35)
@@ -53,7 +53,7 @@ struct SqaureButton: View {
 
 struct SqaureButton_Previews: PreviewProvider {
     static var previews: some View {
-        SqaureButton(iconName: "info",cardText: "To Up" ,bckColor:"CardGreen", textColor: "")
+        SqaureButton(iconName: "info",cardText: "To Up" ,bckColor:"CardGreen", textColor: "jj")
       
         
     }

@@ -44,6 +44,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		332C57AE28BD14AF00497954 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				332B6C4028BC0E65001A573C /* Stockbutton.swift */,
+				334E705B28BCCF8D00CBC1E6 /* ProfileButton.swift */,
+				334E705628BCB3C500CBC1E6 /* Rectangle Button.swift */,
+				332B6C3E28BB6BFF001A573C /* SqaureButtom.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		334E705828BCBA1300CBC1E6 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,10 +85,7 @@
 				33A5437228A8523600269AB7 /* UiWorksDemoApp.swift */,
 				33A5437428A8523600269AB7 /* ContentView.swift */,
 				334E705828BCBA1300CBC1E6 /* Extension */,
-				332B6C3E28BB6BFF001A573C /* SqaureButtom.swift */,
-				334E705628BCB3C500CBC1E6 /* Rectangle Button.swift */,
-				334E705B28BCCF8D00CBC1E6 /* ProfileButton.swift */,
-				332B6C4028BC0E65001A573C /* Stockbutton.swift */,
+				332C57AE28BD14AF00497954 /* Views */,
 				33B95AD228AF80FB006A7F85 /* Layout.swift */,
 				33A5437628A8523800269AB7 /* Assets.xcassets */,
 				33A5437828A8523800269AB7 /* Preview Content */,

@@ -14,10 +14,10 @@ struct ProfileButton: View {
             .overlay(
              Image("Profilepic").resizable()
 //                                        .scaledToFit()
-                 .frame(width: 75, height: 75)
+                 .frame(width: 50, height: 50)
                  .clipped()
 
-            ).frame(width: 85, height: 85)
+            ).frame(width: 60, height: 60)
               
     }
 }
